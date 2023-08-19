@@ -1,0 +1,1 @@
+Contains all the static assets like images, fonts, and global styles.
