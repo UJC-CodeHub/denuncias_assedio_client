@@ -1,0 +1,13 @@
+# Arquivos gerados pelo Next.js
+.next/
+out/
+
+# Dependências geradas pelo Next.js
+node_modules/
+
+# Arquivos de build
+/.next/
+/out/
+
+# Arquivos de cache
+/.next-cache/
