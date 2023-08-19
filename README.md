@@ -1,34 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Sistema de Denúncias de Assédio Sexual na Universidade Joaquim Chissano - Front-end
 
-## Getting Started
+Este é o repositório do front-end para o sistema de denúncias de assédio sexual em universidades. Este sistema está sendio desenvolvido para fornecer um meio seguro e confidencial para os usuários relatarem incidentes de assédio sexual em ambientes universitários.
 
-First, run the development server:
+## Funcionalidades
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- Página de Registro/Login: Permite que os usuários criem contas ou façam login.
+- Página de Perfil do Usuário: Permite que os usuários editem suas informações pessoais.
+- Formulário de Denúncia: Fornece um formulário para denunciar incidentes de assédio sexual.
+- Anonimato Opcional: Permite que os denunciantes escolham fazer denúncias de forma anônima.
+- Envio de Provas: Possibilita o envio de evidências, como imagens, vídeos ou documentos.
+- Página de Visualização de Denúncias: Permite que os administradores revisem as denúncias recebidas.
+- Página de Administração: Oferece um painel de administração seguro para revisar e gerenciar denúncias.
+- Notificações: Notifica os usuários sobre o status de suas denúncias.
+- Páginas de Política e Suporte: Fornecem informações sobre política de privacidade, termos de uso e recursos de suporte.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Pré-requisitos
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Node.js: Certifique-se de que você tenha o Node.js instalado em sua máquina.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Como Iniciar
 
-## Learn More
+1. Clone este repositório: `git clone [URL do Repositório]`
+2. Navegue até a pasta do projeto: `cd denuncias_assedio_client`
+3. Instale as dependências: `pnpm install`
+4. Inicie o servidor de desenvolvimento: `pnpm run dev`
 
-To learn more about Next.js, take a look at the following resources:
+O front-end será executado em `http://localhost:3000`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contribuições
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Aceitamos contribuições para melhorias e correções. Sinta-se à vontade para abrir problemas e enviar pull requests.
