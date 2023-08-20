@@ -1,32 +1,37 @@
-# Sistema de Denúncias de Assédio Sexual na Universidade Joaquim Chissano - Front-end
+# Sexual harassment reporting system at Joaquim Chissano University - Front-end
 
-Este é o repositório do front-end para o sistema de denúncias de assédio sexual em universidades. Este sistema está sendio desenvolvido para fornecer um meio seguro e confidencial para os usuários relatarem incidentes de assédio sexual em ambientes universitários.
+This is the front-end repository for the college sexual harassment reporting system. This system is being developed to provide a secure and confidential means for users to report incidents of sexual harassment in university settings.
 
-## Funcionalidades
+## Functionalities
+- Registration/Login Page: Allows users to create accounts or login.
+- User Profile Page: Allows users to edit their personal information.
+- Report Form: Provides a form to report incidents of sexual harassment.
+- Optional Anonymity: Allows whistleblowers to choose to report anonymously.
+- Submission of Evidence: Allows the sending of evidence, such as images, videos or documents.
+- Complaints View Page: Allows administrators to review incoming complaints.
+- Admin Page: Provides a secure admin panel to review and manage reports.
+- Notifications: Notifies users of the status of their reports.
+- Policy and Support Pages: Provide information about privacy policy, terms of use, and support resources.
 
-- Página de Registro/Login: Permite que os usuários criem contas ou façam login.
-- Página de Perfil do Usuário: Permite que os usuários editem suas informações pessoais.
-- Formulário de Denúncia: Fornece um formulário para denunciar incidentes de assédio sexual.
-- Anonimato Opcional: Permite que os denunciantes escolham fazer denúncias de forma anônima.
-- Envio de Provas: Possibilita o envio de evidências, como imagens, vídeos ou documentos.
-- Página de Visualização de Denúncias: Permite que os administradores revisem as denúncias recebidas.
-- Página de Administração: Oferece um painel de administração seguro para revisar e gerenciar denúncias.
-- Notificações: Notifica os usuários sobre o status de suas denúncias.
-- Páginas de Política e Suporte: Fornecem informações sobre política de privacidade, termos de uso e recursos de suporte.
 
-## Pré-requisitos
+# Getting Started
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 
-- Node.js: Certifique-se de que você tenha o Node.js instalado em sua máquina.
+## Prerequisites
+Before building the project, you will need:
+- A recent version of Node.js (14.18.0+)
+- Checking the node.js version: `node --version`
 
-## Como Iniciar
+## How to Start
+1. Clone this repository: `git clone [Repository URL]`
+2. Navigate to the project folder: `cd denuncias_assedio_client`
+3. Install dependencies: `pnpm install | npm i`
+4. Start the development server: `pnpm run dev | npm run dev`
 
-1. Clone este repositório: `git clone [URL do Repositório]`
-2. Navegue até a pasta do projeto: `cd denuncias_assedio_client`
-3. Instale as dependências: `pnpm install`
-4. Inicie o servidor de desenvolvimento: `pnpm run dev`
+The front end will run on `http://localhost:3000`.
 
-O front-end será executado em `http://localhost:3000`.
+# Contributing
+Contributions are welcome. Please read the [contributing guide](CONTRIBUTING.md) for more information.
 
-## Contribuições
-
-Aceitamos contribuições para melhorias e correções. Sinta-se à vontade para abrir problemas e enviar pull requests.
+# License
+This project is licensed under the MIT License - see the [license]() file for details.
