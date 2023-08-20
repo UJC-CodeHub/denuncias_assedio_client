@@ -1,4 +1,4 @@
-# Sexual harassment reporting system at Joaquim Chissano University - Front-end
+# Sexual harassment reporting system
 
 This is the front-end repository for the college sexual harassment reporting system. This system is being developed to provide a secure and confidential means for users to report incidents of sexual harassment in university settings.
 
