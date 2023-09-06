@@ -5,3 +5,10 @@ interface HeaderLinksProps {
   href?: string;
   children?: HeaderLinksProps[];
 }
+
+//Carousel related props
+interface CarouselProps {
+  key: number | string;
+  title: string;
+  subtitle: string;
+}
