@@ -4,7 +4,6 @@ import { Carousel } from "antd";
 import React from "react";
 import { Montserrat } from "next/font/google";
 import Card from "@/components/common/Card";
-import { Warning } from "@phosphor-icons/react";
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 const HomeContainer = () => {
@@ -35,7 +34,7 @@ const HomeContainer = () => {
         </p>
         <div className="flex lg:space-x-3 mt-16 flex-col space-x-0 lg:flex-row space-y-4 lg:space-y-0">
           {cardsContent.map((item) => (
-            <Card {...item} />
+            <Card key={item.key} Icon={item.Icon} title={item.title} subtitle={item.subtitle} />
           ))}
         </div>
       </section>
