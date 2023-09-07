@@ -1,5 +1,7 @@
+import { IconProps } from "@phosphor-icons/react";
+
 //Header related props
-interface HeaderLinksProps {
+export interface HeaderLinksProps {
   key: number | string;
   label: string | JSX.Element;
   href?: string;
@@ -7,8 +9,16 @@ interface HeaderLinksProps {
 }
 
 //Carousel related props
-interface CarouselProps {
+export interface CarouselProps {
   key: number | string;
   title: string;
   subtitle: string;
+}
+
+//Card related props
+export interface MyCardProps{
+  Icon: JSX.Element,
+  key: number | string
+  title: string,
+  subtitle: string
 }
