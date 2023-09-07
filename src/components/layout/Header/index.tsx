@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
-import { PhoneOutlined, MenuOutlined } from "@ant-design/icons";
 import Image from "next/image";
 import { DenunciasLogo, UJCLogo } from "@/assets/images";
 import { headerLinks } from "@/utils/links";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Dropdown } from "antd";
+import { List, Phone } from "@phosphor-icons/react";
 function Header() {
   const pathname = usePathname();
   return (
@@ -16,7 +16,7 @@ function Header() {
         <div className="flex">
           <span className="mr-3">Tem questões?</span>
           <div className="flex items-baseline">
-            <PhoneOutlined className="text-primary m-0 p-0 rotate-90" />
+            <Phone width={20} height={20} className="translate-y-1 text-primary"/>
             <span className="text-primary">+258 84 **** ***</span>
           </div>
         </div>
@@ -30,7 +30,7 @@ function Header() {
             className="cursor-pointer xl:hidden ml-2"
             menu={{ items: headerLinks }}
           >
-            <MenuOutlined />
+            <List height={23} width={23}/>
           </Dropdown>
           <div
             className="

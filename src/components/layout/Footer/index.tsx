@@ -1,5 +1,6 @@
-import { Linkedin, Meta, Youtube } from "@/assets/icons";
+"use client";
 import { DenunciasLogo, UJCLogo } from "@/assets/images";
+import { LinkedinLogo, MetaLogo, YoutubeLogo } from "@phosphor-icons/react";
 import Image from "next/image";
 import React from "react";
 
@@ -45,15 +46,24 @@ const Footer = () => {
         <div className="flex-1">
           <h2 className="text-xl text-white">Mídias sociais</h2>
           <div className="mt-5 sm:mt-12 flex space-x-3">
-            <Meta />
-            <Linkedin />
-            <Youtube />
+            <MetaLogo
+              size={35}
+              className="cursor-pointer text-mutedVariant2 hover:text-white transition-all duration-200"
+            />
+            <LinkedinLogo
+              size={35}
+              className="cursor-pointer text-mutedVariant2 hover:text-white transition-all duration-200"
+            />
+            <YoutubeLogo
+              size={35}
+              className="cursor-pointer text-mutedVariant2 hover:text-white transition-all duration-200"
+            />
           </div>
         </div>
       </div>
-        <p className="text-center text-mutedVariant2 mt-10">
-          © 2023 Universidade Joaquim Chissano
-        </p>
+      <p className="text-center text-mutedVariant2 mt-10">
+        © 2023 Universidade Joaquim Chissano
+      </p>
     </footer>
   );
 };
