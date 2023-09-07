@@ -1,5 +1,4 @@
-import Link from "next/link";
-
+import { HeaderLinksProps } from "@/@types";
 //HeaderLinks
 const headerLinks: Array<HeaderLinksProps> = [
   {
