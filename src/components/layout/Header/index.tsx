@@ -7,6 +7,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Dropdown } from "antd";
 import { List, Phone } from "@phosphor-icons/react";
+import Button from "@/components/common/Button";
 function Header() {
   const pathname = usePathname();
   return (
@@ -52,9 +53,7 @@ function Header() {
               {link.label}
             </Link>
           ))}
-          <button className="text-white bg-primary p-4 font-medium rounded-sm">
-            <Link href="/denuncias">Denunciar</Link>
-          </button>
+          <Button link="#" text="Denunciar"/>
         </div>
       </div>
     </header>
