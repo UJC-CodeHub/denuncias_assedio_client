@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  scroll-behavior: smooth;
+}
 .carousel {
   background: url("../assets/images/background.jpg") center center gray fixed;
   background-blend-mode: multiply;

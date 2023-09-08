@@ -4,6 +4,8 @@ import { Carousel } from "antd";
 import React from "react";
 import { Montserrat } from "next/font/google";
 import Card from "@/components/common/Card";
+import Link from "next/link";
+import Button from "@/components/common/Button";
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 const HomeContainer = () => {
@@ -34,8 +36,24 @@ const HomeContainer = () => {
         </p>
         <div className="flex lg:space-x-3 mt-16 flex-col space-x-0 lg:flex-row space-y-4 lg:space-y-0">
           {cardsContent.map((item) => (
-            <Card key={item.key} Icon={item.Icon} title={item.title} subtitle={item.subtitle} />
+            <Card
+              key={item.key}
+              Icon={item.Icon}
+              title={item.title}
+              subtitle={item.subtitle}
+            />
           ))}
+        </div>
+      </section>
+      <section className="py-20 bg-gradient-to-r from-[#f4f7f9] to-[#efefea]">
+        <div className="container mx-auto w-11/12 sm:w-full">
+          <h1 className="text-3xl font-medium mb-8">Nossa missão</h1>
+          <p className="w-11/12 md:w-8/12 xl:w-5/12 text-mutedVariant2 ">
+            O sistema facilita a coleta de informações e fornece um canal de
+            comunicação direto com as autoridades competentes, garantindo que as
+            denúncias sejam tratadas de maneira adequada e justa.
+          </p>
+          <Button link="#" text="Ler mais" />
         </div>
       </section>
     </main>
