@@ -4,13 +4,14 @@ import { Carousel } from "antd";
 import React from "react";
 import { Montserrat } from "next/font/google";
 import Card from "@/components/common/Card";
-import Link from "next/link";
 import Button from "@/components/common/Button";
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 const HomeContainer = () => {
   return (
     <main className="min-h-screen">
+
+      {/* Área do carousel */}
       <section className="carousel">
         <Carousel autoplay autoplaySpeed={4000}>
           {carouselContent.map((item) => (
@@ -30,6 +31,8 @@ const HomeContainer = () => {
           ))}
         </Carousel>
       </section>
+
+      {/* Área dos cards */}
       <section className="my-20 font-medium container mx-auto">
         <p className="text-3xl lg:text-4xl w-9/12 lg:w-1/2 text-center before:absolute before:w-1/3 before:left-[34%] before:border-b-mutedVariant2 pb-10 before:border-b-2 before:bottom-0 relative mx-auto ">
           Tudo que você precisa para lutar contra o assédio sexual
@@ -45,6 +48,8 @@ const HomeContainer = () => {
           ))}
         </div>
       </section>
+
+      {/* Área da missão */}
       <section className="py-20 bg-gradient-to-r from-[#f4f7f9] to-[#efefea]">
         <div className="container mx-auto w-11/12 sm:w-full">
           <h1 className="text-3xl font-medium mb-8">Nossa missão</h1>
