@@ -67,7 +67,7 @@ const HomeContainer = () => {
       <section className="py-20 bg-gradient-to-r to-[#f4f7f9] from-[#efefea]">
         <div className="container flex mx-auto">
           <div className="flex-1 py-10 hidden lg:block"></div>
-          <div className="flex-1 py-10">
+          <div className="flex-1 py-10 mx-4 sm:mx-0">
             <h1 className="text-4xl font-medium mb-2">
               Procurando por aconselhamento?
             </h1>
@@ -75,7 +75,7 @@ const HomeContainer = () => {
               Sua mensagem será respondida dentro de 24 horas
             </p>
             <hr className="mb-10 mt-7 w-2/12 border-primary" />
-            <div className="flex justify-between gap-4">
+            <div className="flex justify-between gap-4 flex-col sm:flex-row">
               <input
                 className="transition-all outline-none focus:outline-2 focus:outline-primary duration-200 border border-zinc-300 bg-inherit py-5 px-4 flex-1"
                 placeholder="Nome*"
