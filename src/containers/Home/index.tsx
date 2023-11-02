@@ -10,7 +10,6 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 const HomeContainer = () => {
   return (
     <main className="min-h-screen">
-
       {/* Área do carousel */}
       <section className="carousel">
         <Carousel autoplay autoplaySpeed={4000}>
@@ -59,6 +58,48 @@ const HomeContainer = () => {
             denúncias sejam tratadas de maneira adequada e justa.
           </p>
           <Button link="#" text="Ler mais" />
+        </div>
+      </section>
+
+      <section className="my-20 font-medium container mx-auto"></section>
+
+      {/* Área do contato */}
+      <section className="py-20 bg-gradient-to-r to-[#f4f7f9] from-[#efefea]">
+        <div className="container flex mx-auto">
+          <div className="flex-1 py-10 hidden lg:block"></div>
+          <div className="flex-1 py-10">
+            <h1 className="text-4xl font-medium mb-2">
+              Procurando por aconselhamento?
+            </h1>
+            <p className="text-mutedVariant2">
+              Sua mensagem será respondida dentro de 24 horas
+            </p>
+            <hr className="mb-10 mt-7 w-2/12 border-primary" />
+            <div className="flex justify-between gap-4">
+              <input
+                className="transition-all outline-none focus:outline-2 focus:outline-primary duration-200 border border-zinc-300 bg-inherit py-5 px-4 flex-1"
+                placeholder="Nome*"
+                type="text"
+                name=""
+                id=""
+              />
+              <input
+                className="transition-all outline-none focus:outline-2 focus:outline-primary duration-200 border border-zinc-300 bg-inherit py-5 px-4 flex-1"
+                placeholder="E-mail*"
+                type="text"
+                name=""
+                id=""
+              />
+            </div>
+            <textarea
+              name=""
+              id=""
+              className="border border-zinc-300 bg-inherit py-5 px-4 mt-5 w-full transition-all outline-none focus:outline-2 focus:outline-primary duration-200"
+              rows={6}
+              placeholder="Sua mensagem..."
+            ></textarea>
+            <Button link="#" text="Enviar messagem" />
+          </div>
         </div>
       </section>
     </main>
