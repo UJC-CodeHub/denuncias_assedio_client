@@ -63,4 +63,55 @@ const cardsContent: Array<MyCardProps> = [
     ),
   },
 ];
-export { carouselContent,cardsContent };
+
+const testimonials = [
+  {
+    key: 1,
+    text: "Eu tive coragem de denunciar o assédio sexual que sofri no trabalho. Foi um passo importante para minha cura e para a justiça ser feita.",
+    author: "Anônima 1",
+    date: "Mar 12, 2022",
+  },
+  {
+    key: 2,
+    text: "Denunciar o assédio sexual foi um ato de empoderamento para mim. Espero que minha história inspire outras mulheres a fazerem o mesmo.",
+    author: "Anônima 2",
+    date: "Mar 15, 2022",
+  },
+  {
+    key: 3,
+    text: "Apesar do medo, decidi denunciar o assédio sexual que sofri. Ninguém deveria passar por isso, e espero que minha denúncia ajude a criar um ambiente mais seguro para todos.",
+    author: "Anônima 3",
+    date: "Mar 18, 2022",
+  },
+  {
+    key: 4,
+    text: "Denunciei o assédio sexual para proteger outras mulheres que poderiam ser vítimas. Acredito que juntas podemos acabar com essa forma de violência.",
+    author: "Anônima 4",
+    date: "Mar 21, 2022",
+  },
+  {
+    key: 5,
+    text: "Foi difícil denunciar o assédio sexual, mas sei que foi a coisa certa a fazer. Não podemos deixar que o medo nos cale.",
+    author: "Anônima 5",
+    date: "Mar 24, 2022",
+  },
+  {
+    key: 6,
+    text: "Minha denúncia de assédio sexual foi um passo importante para minha recuperação. Espero que minha história encoraje outras mulheres a se levantarem contra o abuso.",
+    author: "Anônima 6",
+    date: "Mar 27, 2022",
+  },
+  {
+    key: 7,
+    text: "Denunciar o assédio sexual foi uma forma de me libertar do trauma. Não podemos permitir que esses abusos continuem impunes.",
+    author: "Anônima 7",
+    date: "Mar 30, 2022",
+  },
+  {
+    key: 8,
+    text: "Decidi denunciar o assédio sexual para proteger outras mulheres e acabar com o ciclo de abuso. Juntas somos mais fortes.",
+    author: "Anônima 8",
+    date: "Abr 2, 2022",
+  },
+];
+export { carouselContent, cardsContent, testimonials };
