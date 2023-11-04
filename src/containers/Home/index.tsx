@@ -1,13 +1,22 @@
 "use client";
-import { cardsContent, carouselContent } from "@/utils/content";
+import { cardsContent, carouselContent, testimonials } from "@/utils/content";
 import { Carousel } from "antd";
-import React from "react";
+import React, { useRef } from "react";
 import { Montserrat } from "next/font/google";
 import Card from "@/components/common/Card";
 import Button from "@/components/common/Button";
+import { CarouselRef } from "antd/es/carousel";
+import { CaretLeft, CaretRight } from "@phosphor-icons/react";
+import Testimonial from "@/components/common/Testimonial";
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 const HomeContainer = () => {
+  const testimonialsCarouselRef = useRef<CarouselRef>(null);
+  const handleClick = (direction: string) => {
+    direction === "left"
+      ? testimonialsCarouselRef.current?.prev()
+      : testimonialsCarouselRef.current?.next();
+  };
   return (
     <main className="min-h-screen">
       {/* Área do carousel */}
@@ -102,8 +111,49 @@ const HomeContainer = () => {
           </div>
         </div>
       </section>
+
+      {/* Área do carousel */}
+
+      <section className="mt14  mb-20 bg-tertiary pb-10 pt-14">
+        <h2 className="text-dark text-3xl text-center w-11/12 sm:w-5/12 mx-auto">
+          Testemunhos
+        </h2>
+        <div className="container mx-auto relative group overflow-x-hidden">
+          <div
+            className="absolute left-0 flex z-10 -translate-x-8 group-hover:translate-x-0 opacity-0 group-hover:opacity-100 transition-all duration-150 items-center top-0 bottom-0 group/left cursor-pointer"
+            onClick={() => {
+              handleClick("left");
+            }}
+          >
+            <CaretLeft className="text-black/20 text-4xl group-hover/left:text-5xl group-hover/left:text-secondary transition-all duration-200" />
+          </div>
+          <Carousel
+            ref={testimonialsCarouselRef}
+            className="flex-1 "
+            autoplay
+            autoplaySpeed={5000}
+            dots={false}
+          >
+            {testimonials.map((item) => (
+              <Testimonial
+                key={item.key}
+                author={item.author}
+                text={item.text}
+                date={item.date}
+              />
+            ))}
+          </Carousel>
+          <div
+            className="absolute right-0 flex translate-x-8 group-hover:translate-x-0 opacity-0 group-hover:opacity-100 transition-all duration-150 items-center top-0 bottom-0 group/right cursor-pointer z-10"
+            onClick={() => {
+              handleClick("right");
+            }}
+          >
+            <CaretRight className="text-black/20 text-4xl group-hover/right:text-5xl group-hover/right:text-primary transition-all duration-200" />
+          </div>
+        </div>
+      </section>
     </main>
   );
 };
-
 export default HomeContainer;
